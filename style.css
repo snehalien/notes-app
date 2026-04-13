@@ -1,0 +1,85 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+/* DARK MODE */
+.dark {
+    background: #121212;
+    color: white;
+}
+
+/* LAYOUT */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 30%;
+    background: #eeeeee;
+    padding: 15px;
+    overflow-y: auto;
+}
+
+.dark .sidebar {
+    background: #1e1e1e;
+}
+
+/* SEARCH */
+#search {
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+/* NOTE LIST */
+li {
+    list-style: none;
+    padding: 10px;
+    margin: 5px 0;
+    background: white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: left;
+}
+
+li:hover {
+    background: #ddd;
+}
+
+.dark li {
+    background: #2a2a2a;
+}
+
+/* MAIN AREA */
+.main {
+    width: 70%;
+    padding: 20px;
+}
+
+/* TEXTAREA */
+textarea {
+    width: 80%;
+    height: 120px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* BUTTONS */
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #0056b3;
+}

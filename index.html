@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Notes App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Notes App</h1>
+
+<!-- TOP CONTROLS -->
+<button onclick="logout()">Logout</button>
+<button onclick="toggleDark()">🌙</button>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <input type="text" id="search" placeholder="Search..." onkeyup="searchNotes()">
+        <ul id="noteList"></ul>
+    </div>
+
+    <!-- MAIN -->
+    <div class="main">
+        <textarea id="noteInput" placeholder="Write your note..."></textarea>
+
+        <br><br>
+
+        <!-- COLORS -->
+        <button onclick="setColor('lightyellow')">Yellow</button>
+        <button onclick="setColor('lightblue')">Blue</button>
+        <button onclick="setColor('lightgreen')">Green</button>
+
+        <br><br>
+
+        <!-- ADD BUTTON -->
+        <button onclick="addNote()">Add Note</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
